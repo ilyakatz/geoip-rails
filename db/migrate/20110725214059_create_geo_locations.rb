@@ -1,6 +1,6 @@
 class CreateGeoLocations < ActiveRecord::Migration
   def self.up
-    create_table :geo_locations do |t|
+    create_table :geoip_locations do |t|
       t.string :country
       t.string :region
       t.string :city, :index=>true
