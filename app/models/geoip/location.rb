@@ -1,6 +1,6 @@
 module Geoip
   class Location < Geoip::Base
-    
+    set_table_name "geoip_locations"
     has_many :blocks
     
     def self.find_by_ip(ip, &block)
